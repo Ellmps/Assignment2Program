@@ -16,5 +16,33 @@ namespace Assignment2Program
         {
             InitializeComponent();
         }
+
+        private void BtnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "admin")
+            {
+                AdminForm adminForm = new AdminForm();
+                adminForm.Show();
+                this.Hide();
+            }
+            else if (txtUsername.Text == "Doctor")
+            {
+                DoctorForm doctorForm = new DoctorForm();
+                doctorForm.Show();
+                this.Hide();
+            }
+            else if (txtUsername.Text == "Manager")
+            {
+                ManagerForm managerForm = new ManagerForm();
+                managerForm.Show();
+                this.Hide();
+            }
+            else if (txtUsername.Text == "Reception")
+            {
+                Receptionist receptionForm = new Receptionist();
+                receptionForm.Show();
+                this.Hide();
+            }
+        }
     }
 }
