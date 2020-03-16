@@ -147,9 +147,12 @@ namespace Assignment2Program
             SqlCommand cmPatient = new SqlCommand();
             cmPatient.Connection = mySQLCon;
             cmPatient.CommandType = CommandType.Text;
-            cmPatient.CommandText = "INSERT INTO tblPatient(First Name, Surname, Address 1, Address 2, Address 3, Post Code, Contact Number, Date of Birth) VALUES('"
+            cmPatient.CommandText = "INSERT INTO tblPatient(FirstName, Surname, Address1, Address2, Address3, PostCode, ContactNumber, DateofBirth) VALUES('"
                 + myPatientFirstName + "','" + myPatientSecondName + "','" + myAddress1
                 + "'," + "'" + myAddress2 + "','" + myAddress3 + "','" + myPostCode + "','" + myContactNo + "','" + myDOB + "')";
+            cmPatient.ExecuteNonQuery();
+            cmPatient.CommandText = "Select MAX(PatientID) FROM tblPatient";
+            myPatientID = (int)cmPatient.ExecuteScalar();
         }
 
     }

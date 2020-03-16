@@ -16,5 +16,12 @@ namespace Assignment2Program
         {
             InitializeComponent();
         }
+
+        private void btnAddPatient_Click(object sender, EventArgs e)
+        {
+            PatientForm patientForm = new PatientForm();
+            patientForm.Show();
+            this.Hide();
+        }
     }
 }
