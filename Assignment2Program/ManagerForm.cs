@@ -28,7 +28,14 @@ namespace Assignment2Program
         {
             ViewPatient viewPatient = new ViewPatient();
             viewPatient.Show();
-            this.Hide();
+            
+        }
+
+        private void btnAllDoctors_Click(object sender, EventArgs e)
+        {
+            AllDoctor allDoctor = new AllDoctor();
+            allDoctor.Show();
+            
         }
     }
 }

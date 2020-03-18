@@ -21,21 +21,35 @@ namespace Assignment2Program
         {
             PatientForm patientForm = new PatientForm();
             patientForm.Show();
-            this.Hide();
+
         }
 
         private void btnViewPatient_Click(object sender, EventArgs e)
         {
             ViewPatient viewPatient = new ViewPatient();
             viewPatient.Show();
-            this.Hide();
+
         }
 
         private void btnCreateAppointment_Click(object sender, EventArgs e)
         {
             AppointmentForm appointmentForm = new AppointmentForm();
             appointmentForm.Show();
-            this.Hide();
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            CancelAppt viewCancel = new CancelAppt();
+            viewCancel.Show();
+
+        }
+
+        private void btnDoctorReport_Click(object sender, EventArgs e)
+        {
+            ParticularDoctor particularDoctor = new ParticularDoctor();
+            particularDoctor.Show();
+
         }
     }
 }

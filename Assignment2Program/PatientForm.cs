@@ -21,11 +21,6 @@ namespace Assignment2Program
             InitializeComponent();
         }
 
-        private void PatientForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             Patient obj = new Patient();
@@ -42,6 +37,16 @@ namespace Assignment2Program
             obj.AddPatient();
         }
 
-       
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Form1 logIn = new Form1();
+            logIn.Show();
+            this.Hide();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -13,19 +13,19 @@ using System.Data.SqlClient;
 
 namespace Assignment2Program
 {
-    public partial class AppointmentForm : Form
+    public partial class CancelAppt : Form
     {
         public int whichRecord = 0;
         public int countRecords = 0;
 
         System.Data.SqlClient.SqlDataAdapter daGetAppointment;
         DataSet dsAppointment;
-        public AppointmentForm()
+        public CancelAppt()
         {
             InitializeComponent();
         }
 
-        private void AppointmentForm_Load(object sender, EventArgs e)
+        private void CancelAppt_Load(object sender, EventArgs e)
         {
             dsAppointment = new DataSet();
             String sqlGetWhat;
@@ -45,30 +45,42 @@ namespace Assignment2Program
         private void MoveRecords()
         {
             DataRow OneRecord = dsAppointment.Tables["Appointment"].Rows[whichRecord];
+
+            txtApptID.Text = OneRecord.ItemArray.GetValue(0).ToString();
             txtApptDate.Text = OneRecord.ItemArray.GetValue(1).ToString();
             txtApptTime.Text = OneRecord.ItemArray.GetValue(2).ToString();
             txtPatientID.Text = OneRecord.ItemArray.GetValue(3).ToString();
             txtDoctorID.Text = OneRecord.ItemArray.GetValue(4).ToString();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnFirst_Click(object sender, EventArgs e)
         {
-            Appointment obj = new Appointment();
-
-            obj.AppointmentDate = txtApptDate.Text;
-            obj.AppointmentTime = txtApptTime.Text;
-            obj.PatientID = txtPatientID.Text;
-            obj.DoctorID = txtDoctorID.Text;
-
-
-            obj.AddAppt();
+            whichRecord = 0;
+            MoveRecords();
         }
 
-        private void btnLogOut_Click(object sender, EventArgs e)
+        private void btnLast_Click(object sender, EventArgs e)
         {
-            Form1 logIn = new Form1();
-            logIn.Show();
-            this.Hide();
+            whichRecord = countRecords - 1;
+            MoveRecords();
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            if (whichRecord > 0)
+            {
+                whichRecord--;
+                MoveRecords();
+            }
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (whichRecord < countRecords - 1)
+            {
+                whichRecord++;
+                MoveRecords();
+            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)

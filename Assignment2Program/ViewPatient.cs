@@ -41,8 +41,7 @@ namespace Assignment2Program
 
             countRecords = dsPatient.Tables["Patient"].Rows.Count;
 
-            MoveRecords();
-           
+            MoveRecords();           
         }
 
         private void MoveRecords()
@@ -88,6 +87,18 @@ namespace Assignment2Program
                 whichRecord++;
                 MoveRecords();
             }
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Form1 logIn = new Form1();
+            logIn.Show();
+            this.Hide();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -28,8 +28,20 @@ namespace Assignment2Program
         {
             ViewPatient viewPatient = new ViewPatient();
             viewPatient.Show();
-            this.Hide();
 
+
+        }
+
+        private void btnCancelAppt_Click(object sender, EventArgs e)
+        {
+            CancelAppt viewCancel = new CancelAppt();
+            viewCancel.Show();
+        }
+
+        private void btnDoctorSearch_Click(object sender, EventArgs e)
+        {
+            ParticularDoctor particularDoctor = new ParticularDoctor();
+            particularDoctor.Show();
         }
     }
 }
