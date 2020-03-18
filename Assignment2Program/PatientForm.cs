@@ -15,9 +15,15 @@ namespace Assignment2Program
 {
     public partial class PatientForm : Form
     {
+
         public PatientForm()
         {
             InitializeComponent();
+        }
+
+        private void PatientForm_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -35,5 +41,7 @@ namespace Assignment2Program
 
             obj.AddPatient();
         }
+
+       
     }
 }

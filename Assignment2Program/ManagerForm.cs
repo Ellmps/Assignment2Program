@@ -23,5 +23,12 @@ namespace Assignment2Program
             logIn.Show();
             this.Hide();
         }
+
+        private void btnViewPatient_Click(object sender, EventArgs e)
+        {
+            ViewPatient viewPatient = new ViewPatient();
+            viewPatient.Show();
+            this.Hide();
+        }
     }
 }
