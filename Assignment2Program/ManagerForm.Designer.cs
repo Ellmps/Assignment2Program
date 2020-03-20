@@ -38,19 +38,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.label1.Location = new System.Drawing.Point(365, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(331, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 39);
+            this.label1.Size = new System.Drawing.Size(196, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manager Panel";
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(17, 16);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogOut.Location = new System.Drawing.Point(13, 13);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(125, 53);
+            this.btnLogOut.Size = new System.Drawing.Size(126, 57);
             this.btnLogOut.TabIndex = 1;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
@@ -58,10 +56,9 @@
             // 
             // btnViewPatient
             // 
-            this.btnViewPatient.Location = new System.Drawing.Point(17, 127);
-            this.btnViewPatient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnViewPatient.Location = new System.Drawing.Point(362, 104);
             this.btnViewPatient.Name = "btnViewPatient";
-            this.btnViewPatient.Size = new System.Drawing.Size(125, 50);
+            this.btnViewPatient.Size = new System.Drawing.Size(126, 57);
             this.btnViewPatient.TabIndex = 2;
             this.btnViewPatient.Text = "View Patient";
             this.btnViewPatient.UseVisualStyleBackColor = true;
@@ -69,10 +66,9 @@
             // 
             // btnAllDoctors
             // 
-            this.btnAllDoctors.Location = new System.Drawing.Point(17, 217);
-            this.btnAllDoctors.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAllDoctors.Location = new System.Drawing.Point(362, 198);
             this.btnAllDoctors.Name = "btnAllDoctors";
-            this.btnAllDoctors.Size = new System.Drawing.Size(125, 59);
+            this.btnAllDoctors.Size = new System.Drawing.Size(126, 57);
             this.btnAllDoctors.TabIndex = 3;
             this.btnAllDoctors.Text = "Obtain and Run Reports for all doctors";
             this.btnAllDoctors.UseVisualStyleBackColor = true;
@@ -80,14 +76,14 @@
             // 
             // ManagerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnAllDoctors);
             this.Controls.Add(this.btnViewPatient);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ManagerForm";
             this.Text = "ManagerForm";
             this.ResumeLayout(false);

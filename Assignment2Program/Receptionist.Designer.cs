@@ -33,14 +33,15 @@
             this.btnDoctorReport = new System.Windows.Forms.Button();
             this.btnCreateAppointment = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAddPatient
             // 
-            this.btnAddPatient.Location = new System.Drawing.Point(251, 154);
-            this.btnAddPatient.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddPatient.Location = new System.Drawing.Point(485, 125);
             this.btnAddPatient.Name = "btnAddPatient";
-            this.btnAddPatient.Size = new System.Drawing.Size(168, 76);
+            this.btnAddPatient.Size = new System.Drawing.Size(126, 57);
             this.btnAddPatient.TabIndex = 0;
             this.btnAddPatient.Text = "Add Patient";
             this.btnAddPatient.UseVisualStyleBackColor = true;
@@ -48,10 +49,9 @@
             // 
             // btnViewPatient
             // 
-            this.btnViewPatient.Location = new System.Drawing.Point(17, 154);
-            this.btnViewPatient.Margin = new System.Windows.Forms.Padding(4);
+            this.btnViewPatient.Location = new System.Drawing.Point(229, 125);
             this.btnViewPatient.Name = "btnViewPatient";
-            this.btnViewPatient.Size = new System.Drawing.Size(168, 70);
+            this.btnViewPatient.Size = new System.Drawing.Size(126, 57);
             this.btnViewPatient.TabIndex = 1;
             this.btnViewPatient.Text = "View Patient";
             this.btnViewPatient.UseVisualStyleBackColor = true;
@@ -59,10 +59,9 @@
             // 
             // btnDoctorReport
             // 
-            this.btnDoctorReport.Location = new System.Drawing.Point(17, 258);
-            this.btnDoctorReport.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDoctorReport.Location = new System.Drawing.Point(359, 317);
             this.btnDoctorReport.Name = "btnDoctorReport";
-            this.btnDoctorReport.Size = new System.Drawing.Size(168, 64);
+            this.btnDoctorReport.Size = new System.Drawing.Size(126, 57);
             this.btnDoctorReport.TabIndex = 2;
             this.btnDoctorReport.Text = "Report for particular Doctor";
             this.btnDoctorReport.UseVisualStyleBackColor = true;
@@ -70,10 +69,9 @@
             // 
             // btnCreateAppointment
             // 
-            this.btnCreateAppointment.Location = new System.Drawing.Point(17, 358);
-            this.btnCreateAppointment.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCreateAppointment.Location = new System.Drawing.Point(229, 227);
             this.btnCreateAppointment.Name = "btnCreateAppointment";
-            this.btnCreateAppointment.Size = new System.Drawing.Size(168, 70);
+            this.btnCreateAppointment.Size = new System.Drawing.Size(126, 57);
             this.btnCreateAppointment.TabIndex = 3;
             this.btnCreateAppointment.Text = "Create Appointment";
             this.btnCreateAppointment.UseVisualStyleBackColor = true;
@@ -81,29 +79,51 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(17, 450);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancel.Location = new System.Drawing.Point(485, 234);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(168, 62);
+            this.btnCancel.Size = new System.Drawing.Size(126, 57);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Appointment Cancellations";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.25F);
+            this.label1.Location = new System.Drawing.Point(323, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(205, 39);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Receptionist";
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Location = new System.Drawing.Point(13, 9);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(126, 57);
+            this.btnLogOut.TabIndex = 6;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // Receptionist
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLogOut);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnCreateAppointment);
             this.Controls.Add(this.btnDoctorReport);
             this.Controls.Add(this.btnViewPatient);
             this.Controls.Add(this.btnAddPatient);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Receptionist";
             this.Text = "Receptionist";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -114,5 +134,7 @@
         private System.Windows.Forms.Button btnDoctorReport;
         private System.Windows.Forms.Button btnCreateAppointment;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLogOut;
     }
 }

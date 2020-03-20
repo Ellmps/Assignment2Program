@@ -40,18 +40,20 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(128, 161);
+            this.dataGridView1.Location = new System.Drawing.Point(96, 131);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(660, 277);
+            this.dataGridView1.Size = new System.Drawing.Size(495, 225);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnGetReport
             // 
-            this.btnGetReport.Location = new System.Drawing.Point(704, 12);
+            this.btnGetReport.Location = new System.Drawing.Point(528, 10);
+            this.btnGetReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGetReport.Name = "btnGetReport";
-            this.btnGetReport.Size = new System.Drawing.Size(84, 37);
+            this.btnGetReport.Size = new System.Drawing.Size(63, 30);
             this.btnGetReport.TabIndex = 1;
             this.btnGetReport.Text = "Search";
             this.btnGetReport.UseVisualStyleBackColor = true;
@@ -60,24 +62,27 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label1.Location = new System.Drawing.Point(123, 11);
+            this.label1.Location = new System.Drawing.Point(92, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(441, 29);
+            this.label1.Size = new System.Drawing.Size(339, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Please input Doctor ID to obtain report";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(589, 13);
+            this.textBox1.Location = new System.Drawing.Point(442, 11);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 3;
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(13, 11);
+            this.btnLogOut.Location = new System.Drawing.Point(10, 9);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(104, 54);
+            this.btnLogOut.Size = new System.Drawing.Size(78, 44);
             this.btnLogOut.TabIndex = 4;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
@@ -85,9 +90,10 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(13, 72);
+            this.btnBack.Location = new System.Drawing.Point(10, 58);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(104, 58);
+            this.btnBack.Size = new System.Drawing.Size(78, 47);
             this.btnBack.TabIndex = 5;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -95,15 +101,17 @@
             // 
             // ParticularDoctor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGetReport);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ParticularDoctor";
             this.Text = "ParticularDoctor";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

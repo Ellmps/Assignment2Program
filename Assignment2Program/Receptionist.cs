@@ -51,5 +51,12 @@ namespace Assignment2Program
             particularDoctor.Show();
 
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Form1 logIn = new Form1();
+            logIn.Show();
+            this.Hide();
+        }
     }
 }

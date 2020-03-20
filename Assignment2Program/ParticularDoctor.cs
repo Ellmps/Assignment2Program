@@ -21,7 +21,7 @@ namespace Assignment2Program
         {
             Form1 logIn = new Form1();
             logIn.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btnBack_Click(object sender, EventArgs e)

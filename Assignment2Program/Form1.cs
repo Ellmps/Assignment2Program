@@ -19,29 +19,29 @@ namespace Assignment2Program
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "admin")
-            {
-                AdminForm adminForm = new AdminForm();
-                adminForm.Show();
-                this.Hide();
-            }
-            else if (txtUsername.Text == "Doctor")
+            if (txtUsername.Text == "doctor" && txtPassword.Text == "doctor1")
             {
                 DoctorForm doctorForm = new DoctorForm();
                 doctorForm.Show();
                 this.Hide();
             }
-            else if (txtUsername.Text == "Manager")
+
+            else if (txtUsername.Text == "manager" && txtPassword.Text == "manager1")
             {
                 ManagerForm managerForm = new ManagerForm();
                 managerForm.Show();
                 this.Hide();
             }
-            else if (txtUsername.Text == "Reception")
+
+            else if (txtUsername.Text == "reception" && txtPassword.Text == "reception1")
             {
                 Receptionist receptionForm = new Receptionist();
                 receptionForm.Show();
                 this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Please ensure you have inputted the correct credentials");
             }
         }
     }
